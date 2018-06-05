@@ -28,6 +28,15 @@
                 font-size: x-large;
                 font-family: serif;
             }
+
+            .body-item{
+                height: 50px;border: 1px solid; display:flex;
+                margin-top:1px;
+            }
+
+            .body-inner-item{
+                flex:1;  display: flex; background: lightblue; justify-content: center; align-items: center;
+            }
         </style>
     </head>
 
@@ -35,7 +44,7 @@
         <div class="top-header" style="display:flex">
             <div class="header-item">
                 <div style="display: flex; justify-content: start; align-items: center; height: 100%;">
-                    Hello Username
+                    Hello ##USER_NAME##
                 </div>
             </div>
 
@@ -48,18 +57,32 @@
 
 
         <div style="margin-top: 81px; display: flex; flex-direction: column; justify-content: center;height: 70%;">
-            <div style="background: gainsboro; height: 50px;border-bottom: 1px solid">
-                Activation Details
+            <div class="body-item">
+                <div class="body-inner-item" style="background: #ff9800;">
+                    Actvation Details
+                </div>
             </div>
-            <div style="background: gainsboro; height: 50px;border-bottom: 1px solid">LICENSE KEY</div>
-            <div style="background: gainsboro; height: 50px;border-bottom: 1px solid">From Date</div>
-            <div style="background: gainsboro; height: 50px;border-bottom: 1px solid">To Date</div>
+            <div class="body-item">
+                <div class="body-inner-item">
+                    ##SECURITY_KEY##
+                </div>
+            </div>
+            <div class="body-item">
+                <div class="body-inner-item">
+                    ##START_DATE##
+                </div>
+            </div>
+            <div class="body-item">
+                <div class="body-inner-item">
+                    ##END_DATE##
+                </div>
+            </div>
         </div>
 
 
         <div class="bottom-footer" style="display:flex; "  >
             <div style="display: flex; flex:1; justify-content: center; align-items: center; height: 100%;color:white">
-                2018 @Copyright Affixus Systems Pvt Ltd.
+                ##COPYRIGHT_YEAR## @Copyright Affixus Systems Pvt Ltd.
             </div>
         </div>
     </body>
